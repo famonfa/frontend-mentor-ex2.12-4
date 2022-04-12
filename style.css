@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color:  hsl(234, 12%, 34%);
+}
+
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2em ;
+    text-align: center;
+
+
+}
+
+h1, h2 {
+font-size: 1.3rem;
+    }
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+body {
+    background: hsl(0, 0%, 98%);
+}
+
+p {
+    font-weight: 300;
+   
+}
+
+
+.container {
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+    
+    
+}
+
+.card {
+    
+    box-shadow: 0 0.3em 0.2em 0.2em hsl(229, 6%, 66%);
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    min-height:10em ;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.card p {
+    width: 90%;
+    margin-top: 0.5;
+    font-weight: 300;
+}
+
+.one {
+    border-top: 4px solid hsl(180, 62%, 55%) ;
+}
+
+.two {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.three {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.four {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+img {
+    max-width: 15%;
+    align-self: flex-end;
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+
+@media (min-width:700px)
+{
+
+
+main {
+    padding: 1em 7em;
+}
+p {
+    max-width: 50%;
+}
+
+.container {
+    
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 
+
+    "  .        supervisor         .    "
+    " team      supervisor       calcu"
+    " team        karma         calcu "
+    "   .          karma            .    "
+     ;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto;
+}
+
+
+.one {
+    grid-area:supervisor;
+}
+
+.two {
+    grid-area: team;
+}
+
+.three {
+    grid-area: karma;
+}
+
+.four {
+    grid-area: calcu;
+}
+
+}
